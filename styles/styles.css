@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif; 
+}
+
+:root{
+    --purple: #6055A5;
+    --green: #38CC8C;
+    --salmon:#FF7A7A;
+}
+
+body{
+    background-color: var(--salmon);
+    background-image: url(/styles/wallpaper.png);
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3%;
+    gap: 10vw;
+    padding-top: 10%;
+    align-content: center;
+}
+
+#output p{
+    text-align: center;
+    font-size: smaller;
+    background-color: white;
+    opacity: 80%;
+    padding: 1%;
+    border-radius: 7px;
+    box-shadow: 0px 5px 0px 0px rgba(0,0,0,0.24)
+}
+
+#output p:hover{
+    opacity:100%;
+}
+
+h1{
+    margin-bottom: 5%;
+}
+
+#text-container{
+    color: white;
+    text-align: left;
+    width: 30%;
+}
+
+#text-container p{
+    font-size: 0.8em;
+}
+
+#btn{
+    cursor: pointer;
+    background-color: var(--green);
+    border: 1px solid;
+    margin-top: 4%;  
+    width: 96%;
+}
+
+#btn:hover{
+    transition: 500ms;
+    font-size: larger;
+}
+
+input{
+    margin-top: 2%;
+    padding-left: 4%;
+}
+
+#prueba{
+    background-color: var(--purple);
+    box-shadow: 0px 6px 0px 0px rgba(0,0,0,0.24);
+    padding: 1vw;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: smaller;
+    width: 95%;   
+}
+
+#btn, #prueba{
+    color: white;
+}
+
+#prueba, #btn, input{
+    border-radius: 7px;
+}
+
+#myForm input{
+    width: 90%;
+    border: 1px solid #c2c2c2;
+}
+
+#myForm input:hover{
+    border:1 px solid #FF7A7A;
+}
+
+#form{
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 5px 0px 0px rgba(0,0,0,0.24);
+}
+
+span{
+    color: var(--salmon);
+}
+
+span:hover{
+    cursor: pointer;
+}
+
+#form-container{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#myForm{
+    padding-top: 3%;
+}
+
+#myForm p{
+    font-size:0.6em;
+}
+
+@media screen and (max-width: 600px) {
+
+    body{
+        background-image: url(./bg-intro-mobile.png);
+    }
+    
+    #container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        padding-top: 5%;
+        font-size: smaller;
+        gap:0;
+        height: auto;
+    }
+
+    #text-container{
+        width: 100%;
+        text-align: center;
+    }
+
+    #form-container{
+        width: 100%;
+    }
+
+    #prueba{
+        width: 98%;
+    }   
+}
